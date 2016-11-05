@@ -54,8 +54,8 @@ class Registers:
 
            # other flags
            ( 'R_DFLAG', U32 ),   # Direction Flag
-           ( 'R_IDFLAG', U1 ),   # Id flag (support for cpu id instruction)
-           ( 'R_ACFLAG', U1 ),   # Alignment check
+           ( 'R_IDFLAG', U32 ),  # Id flag (support for cpu id instruction)
+           ( 'R_ACFLAG', U32 ),  # Alignment check
            ( 'R_EMWARN', U32 ),
 
            # General purpose 32-bit registers

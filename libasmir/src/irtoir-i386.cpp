@@ -274,9 +274,9 @@ vector<VarDecl *> i386_get_reg_decls()
 
     // other flags
     ret.push_back(new VarDecl("R_DFLAG", r32)); // Direction Flag
-    ret.push_back(new VarDecl("R_IDFLAG", r1));
+    ret.push_back(new VarDecl("R_IDFLAG", r32));
     // Id flag (support for cpu id instruction)
-    ret.push_back(new VarDecl("R_ACFLAG", r1)); // Alignment check
+    ret.push_back(new VarDecl("R_ACFLAG", r32)); // Alignment check
     ret.push_back(new VarDecl("R_EMNOTE", r32));
 
     // General purpose 32-bit registers
